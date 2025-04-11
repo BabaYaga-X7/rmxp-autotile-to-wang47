@@ -1,5 +1,9 @@
 # RPG Maker XP Autotile to Wang 47-Tile Blob Generator
 
+[![Pages Build Status](https://github.com/BabaYaga-X7/rmxp-autotile-to-wang47/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BabaYaga-X7/rmxp-autotile-to-wang47/actions/workflows/pages/pages-build-deployment)
+
+**[Try it now on here!](https://babayaga-x7.github.io/rmxp-autotile-to-wang47/)**
+
 A web-based tool that converts RPG Maker XP autotiles into Wang 47-tile Blob tilesets. This tool helps game developers transition from RPG Maker's autotile format to a more versatile Wang tile system.
 
 ## Features
