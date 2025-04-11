@@ -1,0 +1,9 @@
+export const inputCanvas = document.getElementById('inputCanvas');
+export const partsCanvas = document.getElementById('partsCanvas');
+export const outputCanvas = document.getElementById('outputCanvas');
+export const inputCtx = inputCanvas.getContext('2d');
+export const partsCtx = partsCanvas.getContext('2d');
+export const outputCtx = outputCanvas.getContext('2d');
+export const status = document.getElementById('status');
+export const downloadBtn = document.getElementById('downloadBtn');
+export const imageInput = document.getElementById('imageInput');
