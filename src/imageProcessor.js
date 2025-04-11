@@ -7,7 +7,7 @@ export function processImage(file) {
     const img = new Image();
     img.onload = function() {
         if (img.width !== 96 || img.height !== 128) {
-            status.textContent = 'Error: Image must be 96x128 pixels.';
+            status.textContent = '🚫 System Error: Image dimensions must be 96x128 pixels. Please recalibrate your input.';
             downloadBtn.disabled = true;
             return;
         }
@@ -57,11 +57,11 @@ export function processImage(file) {
             });
         });
 
-        status.textContent = 'Wang 47-tile Blob tileset generated successfully! (384x128, 12 tiles wide, 4 rows)';
+        status.textContent = '🌟 Tileset Generation Complete! Matrix size: 384x128 | Format: 47-Tile Blob | Ready for Download';
         downloadBtn.disabled = false;
     };
     img.onerror = function() {
-        status.textContent = 'Error loading image.';
+        status.textContent = '⚠️ System Malfunction: Invalid image format detected. Please upload a PNG file.';
         downloadBtn.disabled = true;
     };
     img.src = URL.createObjectURL(file);

@@ -5,5 +5,5 @@ export function downloadOutput() {
     link.download = 'wang_47_blob_tileset.png';
     link.href = outputCanvas.toDataURL('image/png');
     link.click();
-    status.textContent = 'Output downloaded as wang_47_blob_tileset.png';
+    status.textContent = '💾 Data Transfer Complete: wang_47_blob_tileset.png successfully downloaded to your local matrix.';
 }
