@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker XP Autotile to Wang 47-Tile Blob Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h2>RPG Maker XP Autotile to Wang 47-Tile Blob Generator</h2>
+    <p>Upload a 96x128 RPG Maker XP autotile to generate a Wang 47-tile Blob tileset.</p>
+    <input type="file" id="imageInput" accept="image/png">
+    <br><br>
+    <canvas id="inputCanvas" width="96" height="128" style="display: none;"></canvas>
+    <canvas id="partsCanvas" width="128" height="16" style="display: none;"></canvas>
+    <canvas id="outputCanvas" width="384" height="128"></canvas>
+    <br>
+    <button id="downloadBtn" disabled>Download 47-Tile Blob Tileset</button>
+    <p id="status"></p>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
