@@ -3,20 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Maker XP Autotile to Wang 47-Tile Blob Generator</title>
+    <meta name="theme-color" content="#121212">
+    
+    <!-- Primary Meta Tags -->
+    <title>RPG Maker XP Autotile to Wang 47-Tile Blob Generator | Free Online Tool</title>
+    <meta name="title" content="RPG Maker XP Autotile to Wang 47-Tile Blob Generator | Free Online Tool">
+    <meta name="description" content="Free online tool to convert RPG Maker XP autotiles into Wang 47-tile blob tilesets. Perfect for game developers and tile artists. Upload your 96x128 autotile and get an instant conversion.">
+    <meta name="keywords" content="RPG Maker XP, autotile converter, Wang tiles, blob tileset, game development, tile conversion, RPG Maker tools, tile mapping">
+    <meta name="author" content="Tile Conversion Tools">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="RPG Maker XP Autotile to Wang 47-Tile Blob Generator">
+    <meta property="og:description" content="Free online tool to convert RPG Maker XP autotiles into Wang 47-tile blob tilesets. Perfect for game developers and tile artists.">
+    <meta property="og:image" content="https://your-domain.com/preview-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/">
+    <meta property="twitter:title" content="RPG Maker XP Autotile to Wang 47-Tile Blob Generator">
+    <meta property="twitter:description" content="Free online tool to convert RPG Maker XP autotiles into Wang 47-tile blob tilesets. Perfect for game developers and tile artists.">
+    <meta property="twitter:image" content="https://your-domain.com/preview-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-domain.com/">
 </head>
 <body>
-    <h2>RPG Maker XP Autotile to Wang 47-Tile Blob Generator</h2>
-    <p>Upload a 96x128 RPG Maker XP autotile to generate a Wang 47-tile Blob tileset.</p>
-    <input type="file" id="imageInput" accept="image/png">
-    <br><br>
-    <canvas id="inputCanvas" width="96" height="128" style="display: none;"></canvas>
-    <canvas id="partsCanvas" width="128" height="16" style="display: none;"></canvas>
-    <canvas id="outputCanvas" width="384" height="128"></canvas>
-    <br>
-    <button id="downloadBtn" disabled>Download 47-Tile Blob Tileset</button>
-    <p id="status"></p>
+    <header>
+        <h1 class="visually-hidden">RPG Maker XP Autotile to Wang 47-Tile Blob Generator</h1>
+    </header>
+    <main class="container" role="main">
+        <article class="converter-tool">
+            <h2>RPG Maker XP Autotile to Wang 47-Tile Blob Generator</h2>
+            <p>Upload a 96x128 RPG Maker XP autotile to generate a Wang 47-tile Blob tileset. This free online tool helps game developers convert their autotiles quickly and efficiently.</p>
+            
+            <section class="input-section" aria-labelledby="upload-section">
+                <h3 id="upload-section" class="visually-hidden">Upload Section</h3>
+                <div class="input-wrapper">
+                    <label for="imageInput" class="visually-hidden">Upload your autotile image (96x128 pixels)</label>
+                    <input type="file" 
+                           id="imageInput" 
+                           accept="image/png"
+                           aria-describedby="status"
+                           aria-label="Upload your autotile image (96x128 pixels)">
+                    <p id="status" role="status" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="output-section" aria-labelledby="preview-section">
+                <h3 id="preview-section" class="visually-hidden">Preview Section</h3>
+                <div class="canvas-wrapper">
+                    <canvas id="inputCanvas" width="96" height="128" style="display: none;" aria-hidden="true"></canvas>
+                    <canvas id="partsCanvas" width="128" height="16" style="display: none;" aria-hidden="true"></canvas>
+                    <canvas id="outputCanvas" 
+                            width="384" 
+                            height="128" 
+                            aria-label="Generated Wang 47-tile Blob tileset preview"
+                            role="img"></canvas>
+                </div>
+                <button id="downloadBtn" 
+                        disabled 
+                        aria-label="Download 47-Tile Blob Tileset">
+                    Download 47-Tile Blob Tileset
+                </button>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Tile Conversion Tools. All rights reserved.</p>
+    </footer>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "RPG Maker XP Autotile to Wang 47-Tile Blob Generator",
+        "description": "Free online tool to convert RPG Maker XP autotiles into Wang 47-tile blob tilesets. Perfect for game developers and tile artists.",
+        "applicationCategory": "Game Development Tool",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 
     <script type="module" src="src/main.js"></script>
 </body>
