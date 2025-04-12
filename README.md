@@ -6,6 +6,8 @@
 
 A web-based tool that converts RPG Maker XP autotiles into Wang 47-tile Blob tilesets. This tool helps game developers transition from RPG Maker's autotile format to a more versatile Wang tile system.
 
+![Preview](docs/preview.png)
+
 ## Features
 
 - Converts 96x128 RPG Maker XP autotiles to 384x128 Wang 47-tile Blob tilesets

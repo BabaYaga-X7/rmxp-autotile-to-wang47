@@ -68,7 +68,7 @@ p {
 
 .upload-container {
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1.5rem;
     border: 2px solid var(--neon-primary);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.3);
